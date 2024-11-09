@@ -10,11 +10,11 @@ const Layout = () => {
       <header className={css.container}>
         <AppBar />
       </header>
-
-      <Suspense fallback={null}>
-        <Outlet />
-      </Suspense>
-
+      <main>
+        <Suspense fallback={null}>
+          <Outlet />
+        </Suspense>
+      </main>
       <Toaster position="top-right" reverseOrder={false} />
     </>
   );

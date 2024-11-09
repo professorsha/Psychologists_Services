@@ -1,16 +1,18 @@
-import Navigation from "../Navigation/Navigation";
-import Logo from "../Logo/Logo";
-import css from "./AppBar.module.css";
+import css from './AppBar.module.css';
+import Logo from '../Logo/Logo';
+import AuthNav from '../AuthNav/AuthNav';
+import Navigation from '../Navigation/Navigation';
 
 const AppBar = () => {
-//   const isLoggedIn = useSelector(selectIsLoggedIn);
+  //   const isLoggedIn = useSelector(selectIsLoggedIn);
 
   return (
-    <header className={css.header}>
-      <Logo/>
+    <>
+      <Logo />
       <Navigation />
       {/* {isLoggedIn ? <UserMenu /> : <AuthNav />} */}
-    </header>
+      <AuthNav />
+    </>
   );
 };
 

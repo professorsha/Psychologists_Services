@@ -1,12 +1,22 @@
-.link {
-  display: inline-block;
-  text-decoration: none;
-  padding: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  color: #2a363b;
+.authNavigation {
+  width: 303px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
 }
-
+.linkLogin {
+  border: 1px solid #191a1533;
+  border-radius: 30px;
+  padding: 14px 39px;
+  color: #191a15;
+}
+.linkRegister {
+  color: #fbfbfb;
+  background-color: #54be96;
+  border-radius: 30px;
+  padding: 14px 40px;
+}
 .link:hover {
-  color: #4482d7;
+  color: #54be96;
 }
