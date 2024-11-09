@@ -1,20 +1,22 @@
- import AppBar from "../AppBar/AppBar";
-
-// import { Suspense } from "react";
-// import { Outlet } from "react-router-dom";
-import { Toaster } from "react-hot-toast";
-
-import css from "./Layout.module.css";
+import AppBar from '../AppBar/AppBar';
+import css from './Layout.module.css';
+import { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 
 const Layout = () => {
   return (
-    <div className={css.container}>
-       <AppBar />
-      {/* <Suspense fallback={null}>
+    <>
+      <header className={css.container}>
+        <AppBar />
+      </header>
+
+      <Suspense fallback={null}>
         <Outlet />
-      </Suspense>  */}
+      </Suspense>
+
       <Toaster position="top-right" reverseOrder={false} />
-    </div>
+    </>
   );
 };
 

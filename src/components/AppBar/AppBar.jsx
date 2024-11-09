@@ -1,4 +1,5 @@
 import Navigation from "../Navigation/Navigation";
+import Logo from "../Logo/Logo";
 import css from "./AppBar.module.css";
 
 const AppBar = () => {
@@ -6,6 +7,7 @@ const AppBar = () => {
 
   return (
     <header className={css.header}>
+      <Logo/>
       <Navigation />
       {/* {isLoggedIn ? <UserMenu /> : <AuthNav />} */}
     </header>

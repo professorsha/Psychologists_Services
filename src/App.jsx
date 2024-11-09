@@ -17,9 +17,9 @@ const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 //   import('./pages/RegistrationPage/RegistrationPage')
 // );
 // const LoginPage = lazy(() => import('./pages/LoginPage/LoginPage'));
-// const PsychologistsPage = lazy(() =>
+const PsychologistsPage = lazy(() =>
   import('./pages/PsychologistsPage/PsychologistsPage')
-// );
+);
 // const FavoritesPage = lazy(() => import('./pages/FavoritesPage/FavoritesPage'));
 
 function App() {
@@ -45,9 +45,9 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          {/* <Route index element={<HomePage />} /> */}
-          {/* <Route path="/psychologists" element={<PsychologistsPage />} />
-          <Route
+          <Route index element={<HomePage />} />
+           <Route path="/psychologists" element={<PsychologistsPage />} /> 
+         {/* <Route
             path="/register"
             element={
               <RestrictedRoute
