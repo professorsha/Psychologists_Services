@@ -1,7 +1,7 @@
  import AppBar from "../AppBar/AppBar";
 
-import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
+// import { Suspense } from "react";
+// import { Outlet } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
 import css from "./Layout.module.css";
@@ -10,9 +10,9 @@ const Layout = () => {
   return (
     <div className={css.container}>
        <AppBar />
-      <Suspense fallback={null}>
+      {/* <Suspense fallback={null}>
         <Outlet />
-      </Suspense> 
+      </Suspense>  */}
       <Toaster position="top-right" reverseOrder={false} />
     </div>
   );
